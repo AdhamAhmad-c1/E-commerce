@@ -1,8 +1,18 @@
 @import "tailwindcss";
 
-
+html {
+    font-family: var(--font-inter);
+}
 
 @theme {
-    --color-primary: #491700;
-    --font-inter: 'inter';
+    --color-primary: #2C3E50;
+    --color-secondary: #E8E0D5;
+    --color-tertiary: #C9714A;
+    --color-neutral: #FAFAF8;
+    --font-inter: 'Inter', sans-serif;
+}
+@layer components{
+    .nav-link{
+        @apply text-[14px];
+    }
 }

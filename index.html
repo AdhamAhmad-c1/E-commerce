@@ -12,43 +12,48 @@
 <body>
     <header class="py-6">
         <div class="container mx-auto flex justify-between items-center">
-            <div>
-                <a href="./index.html">
-                <p class="font-inter font-bold text-2xl/8 tracking-[1.2px] pl-12">MAISON</p>
+            <div class="menu bloack md:hidden"> 
+                <a href="#">
+                    <img src="./assets/icons/Menu.svg" />
                 </a>
             </div>
             <div>
+                <a href="./index.html">
+                <p class="font-bold text-2xl/8 tracking-[1.2px] ">MAISON</p>
+                </a>
+            </div>
+            <nav class="list hidden lg:block">
                 <ul class="flex gap-8">
                     <li>
                         <a class="hover:underline hover:font-bold" href="#">Home</a>
                     </li>
                     <li>
-                        <a href="#">Shop</a>
+                        <a class="navlink" href="#">Shop</a>
                     </li>
                     <li>
-                        <a href="#">Collections</a>
+                        <a class="navlink" href="#">Collections</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a class="navlink" href="#">About</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a class="navlink" href="#">Contact</a>
                     </li>
                 </ul>
-            </div>
+            </nav>
             <div>
                 <ul class="flex gap-6">
-                    <li>
+                    <li class="hidden md:block">
                         <a href="#">
                             <img src="./assets/icons/Avatar.svg"/>
                         </a>
                     </li>
-                    <li>
+                    <li class="hidden md:block">
                         <a href="#">
                             <img src="./assets/icons/Search.svg"/>
                         </a>
                     </li>
-                    <li>
+                    <li class="hidden md:block">
                         <a href="#">
                             <img src="./assets/icons/Heart.svg"/>
                         </a>

@@ -7,14 +7,12 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-500: oklch(63.7% 0.237 25.331);
     --spacing: 0.25rem;
     --text-2xl: 1.5rem;
-    --text-2xl--line-height: calc(2 / 1.5);
     --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --font-inter: 'inter';
+    --font-inter: 'Inter', sans-serif;
   }
 }
 @layer base {
@@ -190,6 +188,9 @@
   .flex {
     display: flex;
   }
+  .hidden {
+    display: none;
+  }
   .items-center {
     align-items: center;
   }
@@ -204,12 +205,6 @@
   }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
-  }
-  .pl-12 {
-    padding-left: calc(var(--spacing) * 12);
-  }
-  .font-inter {
-    font-family: var(--font-inter);
   }
   .text-2xl\/8 {
     font-size: var(--text-2xl);
@@ -237,6 +232,29 @@
         text-decoration-line: underline;
       }
     }
+  }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
+    }
+  }
+  .md\:hidden {
+    @media (width >= 48rem) {
+      display: none;
+    }
+  }
+  .lg\:block {
+    @media (width >= 64rem) {
+      display: block;
+    }
+  }
+}
+html {
+  font-family: var(--font-inter);
+}
+@layer components {
+  .nav-link {
+    font-size: 14px;
   }
 }
 @property --tw-font-weight {
