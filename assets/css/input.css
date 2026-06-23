@@ -11,8 +11,4 @@ html {
     --color-neutral: #FAFAF8;
     --font-inter: 'Inter', sans-serif;
 }
-@layer components{
-    .nav-link{
-        @apply text-[14px];
-    }
-}
+
