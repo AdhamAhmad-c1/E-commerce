@@ -1,8 +1,6 @@
 @import "tailwindcss";
 
-html {
-    font-family: var(--font-inter);
-}
+
 
 @theme {
     --color-primary: #2C3E50;
@@ -12,3 +10,38 @@ html {
     --font-inter: 'Inter', sans-serif;
 }
 
+@layer base {
+  body{
+        font-family: var(--font-inter);
+  }
+
+  .container{
+    @apply mx-auto;
+    @apply px-[5px];
+    @apply md:px-0;
+  }
+  a,button{
+    @apply cursor-pointer;
+  }
+
+}
+
+@utility row {
+  @apply flex items-center;
+}
+
+@layer components {
+  .navlink {
+    @apply relative inline-block pb-2 text-gray-700;
+  }
+
+  .navlink::after {
+    content: "";
+    @apply absolute left-0 bottom-0 w-full h-px bg-gray-800
+           origin-left scale-x-0 transition-transform duration-300;
+  }
+
+  .navlink:hover::after {
+    @apply scale-x-100;
+  }
+}
