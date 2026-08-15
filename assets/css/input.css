@@ -23,7 +23,16 @@
   a,button{
     @apply cursor-pointer;
   }
+  h1{
+    @apply font-bold text-3.5/4.375 tracking-0.07;
+  }
+  h2{
+    @apply font-bold text-1.5/2 tracking-0.038;
+  }
+  h3{
+    @apply font-bold text-1.5/1.75;
 
+  }
 }
 
 @utility row {

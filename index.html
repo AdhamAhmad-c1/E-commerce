@@ -16,11 +16,7 @@
 <body>
     <header class="py-6">
         <div class="container row justify-between">
-            <div class="menu block md:hidden">
-                <a href="#">
-                    <img src="./assets/icons/Menu.svg" />
-                </a>
-            </div>
+            
             <div>
                 <a href="./index.html">
                     <p class="text-primary font-bold text-2xl/8 tracking-[1.2px]">MAISON</p>
@@ -47,7 +43,7 @@
             </nav>
             <div>
                 <ul class="row gap-6">
-                    <li>
+                    <li class="hidden md:block">
                         <a href="#">
                             <img src="./assets/icons/avatar.svg" />
                         </a>
@@ -67,33 +63,88 @@
                             <img src="./assets/icons/cart.svg" />
                         </a>
                     </li>
+                    <li class="menu block md:hidden">
+                <a href="#">
+                    <img src="./assets/icons/Menu.svg" />
+                </a>
+            </li>
                 </ul>
+                
             </div>
         </div>
     </header>
     <main>
-        <section class="h-[calc(100vh-80px)]">
-            <div class="container row h-ful sm:flex-row flex-col-reverse">
+        <section class="h-auto md:h-[calc(100vh-80px)]">
+            <div class="container row sm:flex-row flex-col">
                 <div class="flex-1">
-                    <span class="text-[#491700] font-bold text-[11px]/[16.5px] tracking-[0.88px]">NEW ARRIVAL — SS 2025</span>
-                    <h1 class="font-bold text-[56px]/[70px] tracking-[1.12px] max-w-lg">Crafted for everyday elegance</h1>
-                    <p class="text-[#43474C] text-[14px]/[22.4px] pb-[40.58px] max-w-md mt-6">A collection born from archival silhouettes, redefined for the modern wardrobe. Quiet confidence
+                    <span class="text-[#491700] font-bold text-0.688/1.031 tracking-0.055">NEW ARRIVAL — SS 2025</span>
+                    <h1 class="max-w-lg">Crafted for everyday elegance</h1>
+                    <p class="text-[#43474C] text-0.875/1.4 pb-2.536 max-w-md mt-6">A collection born from archival silhouettes, redefined for the modern wardrobe. Quiet confidence
                         in every thread.</p>
-                    <div class="row gap-4">
-                        <button class="bg-primary px-8 py-3 text-neutral rounded 
-                        hover:bg-primary/90 hover:shadow-lg transition-all duration-300 active:scale-90">Shop Now</button>
-                        <button class="font-medium text-[14px]/[20px] rounded border-[#c4c4cd] py-3 px-8
-                         hover:bg-primary hover:text-neutral transition-all duration-300 active:scale-90">Explore Collections</button>
+                    <div class="row gap-4 flex-col md:flex-row">
+                        <button class="bg-primary md:px-8 py-3 text-neutral rounded 
+                        hover:bg-primary/90 hover:shadow-lg transition-all duration-300 active:scale-90 md:w-auto w-full">Shop Now</button>
+                        <button class="font-medium text-0.875/1.25 rounded border border-[#EEEFEF] py-3 px-8
+                         hover:bg-primary hover:text-neutral transition-all duration-300 active:scale-90 sm:w-auto w-full">Explore Collections</button>
                     </div>
                 </div>
-                <!-- hidden sm:block -->
                 <div class="flex-1 ">
-                    <img class="h-full w-full" src="assets/img/Hero.png" />
+                    <img class="h-full w-full px-7" src="assets/img/Hero.png" />
                 </div>
             </div>
 
         </section>
+        <section>
+    <div class="container px-0">
+        <h2 class="my-24 mx-12">Shop by category</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="row justify-center w-full">
+                <div>
+                    <span class="text-gray-400 text-sm">01</span>
+                    <h3>Knitwear</h3>
+                    <span class="text-[#77797C] text-sm">24 items</span>
+                </div>
+                <div class="ml-8 w-1/2">
+                    <img src="./assets/img/Knitwear.png"/>
+                </div>
+            </div>
+            <div class="row justify-center w-full">
+                <div>
+                    <span class="text-gray-400 text-sm">01</span>
+                    <h3>Tailoring</h3>
+                    <span class="text-[#77797C] text-sm">24 items</span>
+                </div>
+                <div class="ml-8 w-1/2">
+                    <img src="./assets/img/Tailoring.png"/>
+                </div>
+            </div>
+            <div class="row justify-center w-full">
+                <div>
+                    <span class="text-gray-400 text-sm">01</span>
+                    <h3>Accessories</h3>
+                    <span class="text-[#77797C] text-sm">24 items</span>
+                </div>
+                <div class="ml-8 w-1/2">
+                    <img src="./assets/img/Accessories.png"/>
+                </div>
+            </div>
+            <div class="row justify-center w-full">
+                <div>
+                    <span class="text-gray-400 text-sm">01</span>
+                    <h3>Outerwear</h3>
+                    <span class="text-[#77797C] text-sm">24 items</span>
+                </div>
+                <div class="ml-8 w-1/2">
+                    <img src="./assets/img/Outerwear.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
     </main>
+   
 </body>
 
 </html>
